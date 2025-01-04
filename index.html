@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profolio Wesbite</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/dc064ac1e8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logofinal.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header"> Home </a> </li>
+                    <li> <a href="#about"> About </a> </li>
+                    <li> <a href="#services"> Expertise </a> </li>
+                    <li> <a href="#portfolio"> My Work </a> </li>
+                    <li> <a href="#contact"> Contact </a> </li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Innovative Developer</p>
+                <h1>Hi, I'm <span> Shivani </span> Tiwari </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="images/about.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p> <br>First-year Software Engineering student at the University of Waterloo with a passion for
+                        creating impactful solutions. I thrive in collaborative environments, blending technical
+                        expertise and leadership to bridge technology and business. Beyond coding, I enjoy mentoring
+                        peers, participating in hackathons, and fostering connections. When I’m not building projects,
+                        I’m on the badminton court, exploring music, or enjoying nature. Let’s connect to turn ideas
+                        into reality!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onClick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onClick="opentab('education')">Education</p>
+                        <p class="tab-links" onClick="opentab('skills')">Skills</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Product Design Intern</span><br> - Designed and implemented a software project
+                                using the Waterfall model, ensuring a structured and sequential approach throughout the
+                                Software Development Life Cycle (SDLC). <br>- Led end-to-end development by
+                                systematically completing each phase, including Requirements, Design, Implementation,
+                                Verification, and Maintenance.</li>
+                            <li><span>Web Developer Intern</span><br>- Built a responsive web application using HTML,
+                                CSS, and JavaScript, enhancing user engagement by 30% through improved client data
+                                management and UI optimizations, and reducing bounce rates by 15%. <br>- Implemented
+                                client-side form validation with JavaScript, improving data accuracy by 25% and
+                                minimizing submission errors. </li>
+                            <li><span>Coding Teacher Assistant</span><br>- Taught programming fundamentals to 10
+                                students using Python block coding on Scratch and sensor integration, fostering teamwork
+                                through collaborative projects. <br>- Increased class engagement by 50% through
+                                effective leadership and communication, inspiring students to develop problem-solving
+                                skills.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University of Waterloo - Bachelor of Software Engineering </span><br>Sep 2024 -
+                                June 2029</li>
+                            <li><span>T. L. Kennedy Secondary School</span><br>Sep 2020 - 2024 June</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br> - C++, C, Python, JavaScript, HTML/CSS, SQL, Node.js,
+                                React.js </li>
+                            <li><span>Tools</span><br> - Git, Linux, Eclipse, AWS, Bootstrap, Agil, MS Office, VS code,
+                                VPS </li>
+                            <li><span>App Devlopment</span><br> - Building andriod/ios apps</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-------------------------servies----------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Impact, Innovation, and Expertise</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Youth Leadership & Community Impact</h2>
+                    <p>As a youth mentor at the YMCA, I conducted 15+ workshops covering topics like mental health, coding, self-defense, and creative problem-solving. I also led the development of a comic book featuring a newcomer hero to empower immigrant youth in Canada through the NYLD program.
+                    </p>
+                    <a href="https://www.ymcagta.org/immigrant-services/newcomer-youth-leadership-development-program">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Certified Web Developer </h2>
+                    <p>I earned a Full-Stack Web Development certification, mastering front-end and back-end development. My experience includes building dynamic, responsive websites and optimizing applications for real-world performance. </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Interactive Games & Visual Projects</h2>
+                    <p>I created games like Snake and Tic Tac Toe using p5.js and JavaScript. These projects featured custom animations and responsive gameplay, including a firework simulation that enhanced user engagement with dynamic speed levels and pause modes. </p>
+                    <a href="https://github.com/s34tiwar?tab=repositories">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!---------portfolio----------->
+    <div id="portfolio">
+
+        <div class="container">
+            <h1 class="sub-title"> My Work </h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/weatherapp.png">
+
+                    <div class="layer">
+                        <h3> Weather App</h3>
+                        <p>Designed and implemented a dynamic weather application using HTML, CSS, and JavaScript and
+                            integrated the OpenWeatherMap API to fetch and display real-time weather data </p>
+                        <a href="https://github.com/s34tiwar/Weather-App"> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="images/Mywork2.png">
+
+                    <div class="layer">
+                        <h3> Pulse Match – Real-Time Compatibility Analyzer</h3>
+                        <p> Developed a compatibility monitoring system
+                            analyzing heart rate and conversation audio,
+                            enabling real-time chemistry analysis between
+                            two people.</p>
+                        <a href="https://github.com/s34tiwar/Pulse-Match"> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="images/work3.png">
+
+                    <div class="layer">
+                        <h3>Planetary Orbit Simulation</h3>
+                        <p>DevelopedaPython-based simulation of planetary orbits around the Sun, incorporating real
+                            astronomical values and
+                            gravitational forces to model accurate elliptical trajectories.</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="https://github.com/s34tiwar?tab=repositories" class="btn"> See more</a>
+        </div>
+    </div>
+
+
+    <!---------Contact me----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>shivani2005tiwari@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>+1 (437) 263-7465</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/s34tiwar"> <i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shivani-tiwari-b83b44288/"> <i
+                                class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2"> Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="You Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> © 2024 Shivani Tiwari. All rights reserved. </p>
+        </div>
+
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwEqhqbxeoN9WXg2qn1NIFVNaSIN-oSW--fmcrRLYCKeuhiYMFFE5U4yvcfQPodM1tg/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
